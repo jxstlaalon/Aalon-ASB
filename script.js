@@ -14,7 +14,7 @@ const MODAL_CONTENT = {
   /** Team logo zoom */
   logo: {
     type: 'image',
-    src: '/img/spear.jpg',
+    src: 'https://cdn.jsdelivr.net/gh/jxstlaalon/Aalon-ASB/img/spear.jpg',
     alt: 'SPEAR — Students Propelled by Execution, Authenticity & Reform',
     caption: 'SPEAR Campaign Team Logo'
   },
@@ -22,7 +22,7 @@ const MODAL_CONTENT = {
   /** Candidate photo zoom */
   candidate: {
     type: 'image',
-    src: '/img/aalon.jpg',
+    src: 'https://cdn.jsdelivr.net/gh/jxstlaalon/Aalon-ASB/img/aalon.jpg',
     alt: 'Aalon Peters — Candidate for Director of Extracurricular Academic Activities',
     caption: 'Aalon Peters — Running for Director of Extracurricular Academic Activities'
   },
