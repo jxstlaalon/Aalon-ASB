@@ -515,6 +515,89 @@ ol, ul {
 }
 
 /* =========================================
+   VIDEO SECTION
+   ========================================= */
+.video-section {
+  background-color: var(--white);
+  padding-block: clamp(3rem, 8vw, 6rem);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle decorative radial behind the player */
+.video-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(0, 90, 222, 0.04) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+/* Flex column layout — section header full width, video centered */
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-section .section-header {
+  width: 100%;
+}
+
+.video-wrap {
+  position: relative;
+  z-index: 1;
+  /* Explicit width (not 100%) so aspect-ratio computes properly */
+  /* 506px × 16/9 = 900px max height */
+  width: min(88vw, 506px);
+  max-height: 900px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;               /* belt-and-suspenders centering */
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 4px solid var(--yellow);
+  box-shadow: 0 20px 60px rgba(0, 90, 222, 0.25);
+  background: var(--black);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.video-wrap:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 72px rgba(0, 90, 222, 0.32);
+}
+
+.video-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  object-fit: cover;   /* fills the 9:16 frame cleanly */
+  background: var(--black);
+}
+
+.video-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.video-fallback a {
+  color: var(--yellow);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* =========================================
    VOTE CTA SECTION
    ========================================= */
 .vote-section {
@@ -832,6 +915,10 @@ ol, ul {
 
   .goals-list {
     grid-template-columns: 1fr;
+  }
+
+  .video-wrap {
+    width: min(92vw, 420px);
   }
 
   .modal-content {
