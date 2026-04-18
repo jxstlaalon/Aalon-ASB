@@ -22,7 +22,7 @@ const MODAL_CONTENT = {
   /** Candidate photo zoom */
   candidate: {
     type: 'image',
-    src: 'https://cdn.jsdelivr.net/gh/jxstlaalon/Aalon-ASB/img/aalon.jpg',
+    src: 'https://cdn.jsdelivr.net/gh/jxstlaalon/Aalon-ASB/img/aalon2.jpg',
     alt: 'Aalon Peters — Candidate for Director of Extracurricular Academic Activities',
     caption: 'Aalon Peters — Running for Director of Extracurricular Academic Activities'
   },
