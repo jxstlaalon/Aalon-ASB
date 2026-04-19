@@ -35,4 +35,4 @@ This is the official campaign website for **Aalon Peters**, candidate for **Dire
 
 ## ⚖️ License
 © 2026 Aalon Peters Campaign. All rights reserved. 
-Produced by the SPEAR Team.
+Produced by the Aalon Peters.
