@@ -1,0 +1,7 @@
+# Robots.txt for Aalon Peters Campaign
+# Website: https://voteaalon.ct.ws
+
+User-agent: *
+Allow: /
+
+Sitemap: https://voteaalon.ct.ws/sitemap.xml
